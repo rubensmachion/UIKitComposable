@@ -45,6 +45,12 @@ public extension UIKitComposableProtocol where Self: UIView {
         addSubview(value)
         return self
     }
+    
+    @discardableResult
+    func tintColor(_ value: UIColor) -> Self {
+        self.tintColor = value
+        return self
+    }
 }
 
 public extension UIView {
