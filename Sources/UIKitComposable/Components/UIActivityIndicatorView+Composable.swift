@@ -6,4 +6,10 @@ public extension UIKitComposableProtocol where Self: UIActivityIndicatorView {
         self.hidesWhenStopped = value
         return self
     }
+
+    @discardableResult
+    func indicatorColor(_ value: UIColor) -> Self {
+        self.color = value
+        return self
+    }
 }

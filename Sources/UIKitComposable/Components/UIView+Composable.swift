@@ -3,6 +3,18 @@ import UIKit
 public extension UIKitComposableProtocol where Self: UIView {
     
     @discardableResult
+    func isUserInteractionEnabled(_ value: Bool) -> Self {
+        self.isUserInteractionEnabled = value
+        return self
+    }
+
+    @discardableResult
+    func isHidden(_ value: Bool) -> Self {
+        self.isHidden = value
+        return self
+    }
+
+    @discardableResult
     func translatesAutoresizingMaskIntoConstraints(_ value: Bool) -> Self {
         translatesAutoresizingMaskIntoConstraints = value
         return self
@@ -94,6 +106,12 @@ public extension UIView {
     @discardableResult
     func clipsToBounds(_ value: Bool) -> Self {
         self.clipsToBounds = value
+        return self
+    }
+
+    @discardableResult
+    func tag(_ value: Int) -> Self {
+        self.tag = value
         return self
     }
 }
