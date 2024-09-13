@@ -24,7 +24,7 @@ public extension UIKitComposableProtocol where Self: UICollectionView {
         self.dataSource = value
         return self
     }
-    
+
     @discardableResult
     func showsHorizontalScrollIndicator(_ value: Bool) -> Self {
         self.showsHorizontalScrollIndicator = value

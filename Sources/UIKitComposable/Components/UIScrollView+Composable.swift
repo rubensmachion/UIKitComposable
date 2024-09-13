@@ -19,4 +19,10 @@ public extension UIKitComposableProtocol where Self: UIScrollView {
         self.contentInset = value
         return self
     }
+
+    @discardableResult
+    func isPagingEnabled(_ value: Bool) -> Self {
+        self.isPagingEnabled = value
+        return self
+    }
 }
